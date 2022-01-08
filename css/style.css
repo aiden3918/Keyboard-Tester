@@ -20,11 +20,13 @@ button {font-size: 1.25vw;}
 
 /*------------------------------KEYBOARD------------------------------*/
 .keyboard {margin: 1vw; border-spacing: 10px; text-align: center;}
-
-.key {
-    border: 1px solid gray;
-    padding: 0.5vw;
-}
-
 .func-keys {padding-right: 5vw;}
-.space1 {width: 3.5vw;}
+
+.key {border: 1px solid gray;}
+
+.func-key, .space1 {padding: 0.25vw 0.5vw 0.25vw 0.5vw;}
+.space1 {width: 2.5vw;}
+
+.one-u {width: 1.7vw; height: 1.7vw;}
+.one-half-u {width: 2.5vw; height: 1.7vw;}
+.backspace {width: 5vw;}
