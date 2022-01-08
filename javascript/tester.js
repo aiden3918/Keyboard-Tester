@@ -9,6 +9,7 @@ document.getElementById('body').addEventListener('keydown', e => {
     console.log(`Event key: ${e.key} \n Event code: ${e.code}`); 
     //e.code differentiates between versions of same key
     //i.e. number row and number pad are recognized as "digit" and "numpad" respectively
+    //AND e.code is not affected by shift or caps lock
     //should use e.code when storing key pressed as a value 
 });
 
