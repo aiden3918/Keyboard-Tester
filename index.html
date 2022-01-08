@@ -2,7 +2,7 @@
 <html>
 <head>
     <meta charset="UTF-8">
-    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="author" content="">
     <meta name="description" content="">
@@ -12,24 +12,10 @@
 </head>
 <body>
     <noscript>This website requires javascript to run. Please install javascript and try again.</noscript>
-    <h1 class='title'>Keyboard Tester</h1>
-    <div class='keyboard'>
-        
-    </div>
-    <div class='description'>
-        <h3>About</h3>
-        <p>This is a program to see if your keys are working. Simply press your keyboard to see if input registers for that key.</p>
-        <p>If the corresponding key turns green, it works. If it doesn't, that key may not work.</p>
-        <table class="notes">
-            <tr>
-                <td>Notes: </td>
-                <td> 1. To test numeric keypad be sure Num Lock is ON.</td>
-            </tr>
-            <tr>
-                <td></td>
-                <td> 2. Tester cannot differentiate between duplicate keys (Shift, Ctrl, Alt, Enter). Be sure to test both of each.</td>
-            </tr>
-        </table>
-    </div>
+    <h1>Keyboard Tester</h1>
+    <a href='tester.html' onclick="window.open('tester.html', 'newwindow', 'width=1000,height=700'); return false;">
+        <button>Launch Keyboard Tester</button>
+    </a><br><br>
+    <p>Yes, this is kind of a copy of <a href="https://www.keyboardtester.com/" target='_blank'>keyboardtester.com</a>, but created by me.</p>
 </body>
 </html>
