@@ -26,7 +26,7 @@ button {font-size: 1.25vw;}
 .key {border: 2px solid gray;}
 
 /*top section*/
-.func-key {padding: 4px 11px 4px 11px;}
+.func-key {padding: 4px 11px 4px 11px; display: inline-block;}
 .space1 {width: 70px; height: 32px;}
 .space1 {width: 48px;}
 
