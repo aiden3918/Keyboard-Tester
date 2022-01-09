@@ -21,7 +21,7 @@ textarea {padding: 1vw;}
 button {font-size: 1.25vw;}
 
 /*------------------------------KEYBOARD------------------------------*/
-.keyboard {margin: 1vw; border-spacing: 10px; text-align: center; display: flex; flex-wrap: wrap;}
+.keyboard {margin: 1vw; border-spacing: 10px; text-align: center;}
 
 .key {border: 2px solid gray;}
 
