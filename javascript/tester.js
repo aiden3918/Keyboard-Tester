@@ -5,7 +5,11 @@ document.getElementById('body').addEventListener('keydown', e => {
         e.preventDefault();
         document.getElementById('key-input').textContent += '[' + e.key + ']';
     } else {document.getElementById('key-input').textContent += e.key;}
-    try {document.getElementById(e.code).style.borderColor = 'green'; 
+    try {
+        if (document.getElementById(e.code).style.borderColor = 'gray') {
+            document.getElementById(e.code).style.borderColor = 'green'; 
+            document.getElementById(e.code).style.animation = 'changeColor 1.5s'; 
+        }
     } catch (TypeError) {console.log("exemption key: keyboard ignored")}; 
 });
 

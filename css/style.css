@@ -56,3 +56,21 @@ button {font-size: 1.25vw;}
 .num-pad-bot {width: 77px;}
 .owt-u {width: 30px; height: 73px;}
 .last-col {position: relative; right: 13px;}
+
+@media screen and (max-width: 1100px) {
+    .title {font-size: 6vw;}
+    .description {font-size: 2vw;}
+    #key-input {font-size: 3vw;}
+}
+
+@media screen and (max-width: 600px) {
+    .title {font-size: 8vw;}
+    .description {font-size: 3vw;}
+    #key-input {font-size: 4vw;}
+}
+
+@keyframes changeColor {
+    0% {border-color: gray;}
+    50% {opacity: 0; border-color: gray;}
+    100% {opacity: 1; border-color: green;}
+}
