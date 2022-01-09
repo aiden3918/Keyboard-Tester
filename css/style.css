@@ -11,7 +11,9 @@ h1 {font-size: 4vw;}
 /*------------------------------NOTES/ABOUT------------------------------*/
 .notes-row {padding-right: 3vw;}
 
-.description {font-size: 1.25vw;}
+.description {font-size: 1.25vw; margin-top: 2vw;}
+
+#key-input {font-size: 2vw;}
 
 /*------------------------------INPUT------------------------------*/
 textarea {padding: 1vw;}
@@ -19,14 +21,38 @@ textarea {padding: 1vw;}
 button {font-size: 1.25vw;}
 
 /*------------------------------KEYBOARD------------------------------*/
-.keyboard {margin: 1vw; border-spacing: 10px; text-align: center;}
-.func-keys {padding-right: 5vw;}
+.keyboard {margin: 1vw; border-spacing: 10px; text-align: center; display: flex; flex-wrap: wrap;}
 
-.key {border: 1px solid gray;}
+.key {border: 2px solid gray;}
 
-.func-key, .space1 {padding: 0.25vw 0.5vw 0.25vw 0.5vw;}
-.space1 {width: 2.5vw;}
+/*top section*/
+.func-key {padding: 4px 11px 4px 11px;}
+.space1 {width: 70px; height: 32px;}
+.space1 {width: 48px;}
 
-.one-u {width: 1.7vw; height: 1.7vw;}
-.one-half-u {width: 2.5vw; height: 1.7vw;}
-.backspace {width: 5vw;}
+/*initialization and backspace*/
+.one-u {width: 32px; height: 32px;}
+.backspace {width: 105px;}
+
+/*tab and backslash*/
+.one-half-u {width: 69px;}
+
+/*mid row*/
+.one-sf-u {width: 83px;}
+.two-u {width: 96px;}
+
+/*bottom row*/
+.two-tf-u {width: 104px;}
+.two-half-u {width: 115px;}
+
+.bot1 {width: 57px; height: 32px;}
+.spacebar {width: 234px;}
+
+/*m and arrow keys*/
+.m-key {width: 48px; padding: 2px;}
+.arrow-keys {position: relative; left: 17%;}
+.m-keys {position: relative;}
+
+.num-pad-bot {width: 77px;}
+.owt-u {width: 30px; height: 73px;}
+.last-col {position: relative; right: 13px;}

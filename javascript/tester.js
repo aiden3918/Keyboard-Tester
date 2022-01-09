@@ -1,16 +1,22 @@
 const availableChars = [];
 
 document.getElementById('body').addEventListener('keydown', e => {
-    if (/*e.code[0] == 'F' || */e.code == 'Pause' || e.code == 'Print Screen') {
-         e.preventDefault();
-        document.getElementById('key-input').value += '[' + e.key + ']';
-    }
+    if (e.code[0] == 'F' || e.metaKey || e.ctrlKey || e.altKey || e.key == 'Tab' || e.key == 'Enter' || e.key == 'CapsLock' || 
+    e.key == 'Shift' || e.key == 'ContextMenu' || e.code[0] == 'A' || e.key == 'Insert' || e.key == 'Home' || e.key == 'PageUp' ||
+    e.key == 'Delete' || e.key == 'End' || e.key == 'PageDown' || e.key == 'Escape' || e.key.length > 10) {
+        e.preventDefault();
+        document.getElementById('key-input').textContent += '[' + e.key + ']';
+    } else {document.getElementById('key-input').textContent += e.key;}
     console.log(e);
     console.log(`Event key: ${e.key} \n Event code: ${e.code}`); 
-    //e.code differentiates between versions of same key
-    //i.e. number row and number pad are recognized as "digit" and "numpad" respectively
-    //AND e.code is not affected by shift or caps lock
-    //should use e.code when storing key pressed as a value 
+    try {
+        document.getElementById(e.code).style.borderColor = 'green'; 
+    } catch (TypeError) {console.log("exemption key: keyboard ignored")}; 
 });
 
-document.getElementById('reset').onclick = function() {document.getElementById('key-input').value = "";}
+document.getElementById('reset').onclick = function() {
+    document.getElementById('key-input').textContent = 'Input log: ';
+    for (let i=0; i<103; i++) {
+        document.getElementsByClassName('key')[i].style.borderColor = 'gray';
+    }
+}

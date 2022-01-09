@@ -14,8 +14,7 @@
     <noscript>This website requires javascript to run. Please install javascript and try again.</noscript>
     <h1 class='title'>Keyboard Tester</h1>
     <div class='input' id='input'>
-        <textarea id='key-input' placeholder='Used to track characters (optional).
-Note: does not track function or meta keys. (Ctrl, Alt, etc.)' rows='5' cols='100'></textarea><br>
+        <p id='key-input'>Input log: </p>
         <button id='reset'>Reset</button><br>
     </div>
     <table class='keyboard'>
@@ -47,9 +46,9 @@ Note: does not track function or meta keys. (Ctrl, Alt, etc.)' rows='5' cols='10
                 </table>
             </td>
         </tr>
-        <tr class='60%'>
+        <tr class='main-section'>
             <td>
-                <table class='main-section'>
+                <table>
                     <tr class='num-row'>
                         <td class='one-u key' id='Backquote'>`</td>
                         <td class='one-u key' id='Digit1'>1</td>
@@ -61,11 +60,13 @@ Note: does not track function or meta keys. (Ctrl, Alt, etc.)' rows='5' cols='10
                         <td class='one-u key' id='Digit7'>7</td>
                         <td class='one-u key' id='Digit8'>8</td>
                         <td class='one-u key' id='Digit9'>9</td>
-                        <td class='one-u key' id='Digit10'>0</td>
+                        <td class='one-u key' id='Digit0'>0</td>
                         <td class='one-u key' id='Minus'>-</td>
                         <td class='one-u key' id='Equal'>=</td>
                         <td class='backspace key' id='Backspace'>Backspace</td>
                     </tr>
+                </table>
+                <table>
                     <tr class='top-row'>
                         <td class='one-half-u key' id='Tab'>Tab</td>
                         <td class='one-u key' id='KeyQ'>Q</td>
@@ -80,8 +81,116 @@ Note: does not track function or meta keys. (Ctrl, Alt, etc.)' rows='5' cols='10
                         <td class='one-u key' id='KeyP'>P</td>
                         <td class='one-u key' id='BracketLeft'>[</td>
                         <td class='one-u key' id='BracketRight'>]</td>
-                        <td class='one-half-u key' id='Backslash'></td>
+                        <td class='one-half-u key' id='Backslash'>\</td>
+                        </tr>
+                </table>
+                <table>
+                    <tr class='home-row'>
+                        <td class='one-sf-u key' id='CapsLock'>Cps Lck</td>
+                        <td class='one-u key' id='KeyA'>A</td>
+                        <td class='one-u key' id='KeyS'>S</td>
+                        <td class='one-u key' id='KeyD'>D</td>
+                        <td class='one-u key' id='KeyF'>F</td>
+                        <td class='one-u key' id='KeyG'>G</td>
+                        <td class='one-u key' id='KeyH'>H</td>
+                        <td class='one-u key' id='KeyJ'>J</td>
+                        <td class='one-u key' id='KeyK'>K</td>
+                        <td class='one-u key' id='KeyL'>L</td>
+                        <td class='one-u key' id='Semicolon'>;</td>
+                        <td class='one-u key' id='Quote'>'</td>
+                        <td class='two-u key' id='Enter'>Enter</td>
+                        </tr>
+                </table>
+                <table>
+                    <tr class='bottom-row'>
+                        <td class='two-tf-u key' id='ShiftLeft'>Shift</td>
+                        <td class='one-u key' id='KeyZ'>Z</td>
+                        <td class='one-u key' id='KeyX'>X</td>
+                        <td class='one-u key' id='KeyC'>C</td>
+                        <td class='one-u key' id='KeyV'>V</td>
+                        <td class='one-u key' id='KeyB'>B</td>
+                        <td class='one-u key' id='KeyN'>N</td>
+                        <td class='one-u key' id='KeyM'>M</td>
+                        <td class='one-u key' id='Comma'>,</td>
+                        <td class='one-u key' id='Period'>.</td>
+                        <td class='one-u key' id='Slash'>/</td>
+                        <td class='two-half-u key' id='ShiftRight'>Shift</td>
                     </tr>
+                </table>
+                <table>
+                    <tr class='bottom-section'>
+                        <td class='bot1 key' id='ControlLeft'>Ctrl</td>
+                        <td class='bot1 key' id='MetaLeft'>Meta</td>
+                        <td class='bot1 key' id='AltLeft'>Alt</td>
+                        <td class='spacebar key' id='Space'>Space</td>
+                        <td class='bot1 key' id='AltRight'>Alt</td>
+                        <td class='bot1 key' id='ContextMenu'>Cont</td>
+                        <td class='bot1 key' id='ControlRight'>Ctrl</td>
+                    </tr>
+                </table>
+            </td>
+            <td>
+                <table class='m-keys'>
+                    <tr>
+                        <td class='m-key key' id='Insert'>Ins</td>
+                        <td class='m-key key' id='Home'>Home</td>
+                        <td class='m-key key' id='PageUp'>Pg Up</td>
+                    </tr>
+                    <tr class='m-end'>
+                        <td class='m-key key' id='Delete'>Del</td>
+                        <td class='m-key key' id='End'>End</td>
+                        <td class='m-key key' id='PageDown'>Pg Dn</td>
+                    </tr>
+                </table>
+                <br><br>
+                <table class='arrow-keys'>
+                    <tr>
+                        <td></td>
+                        <td class='one-u key' id='ArrowUp'>&#8593;</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td class='one-u key' id='ArrowLeft'>&#8592;</td>
+                        <td class='one-u key' id='ArrowDown'>&#8595;</td>
+                        <td class='one-u key' id='ArrowRight'>&#8594;</td>
+                    </tr>
+                </table>
+            </td>
+            <td>
+                <table class='90'>
+                    <tr>
+                        <td class='one-u key' id='NumLock'>Num Lck</td>
+                        <td class='one-u key' id='NumpadDivide'>/</td>
+                        <td class='one-u key' id='NumpadMultiply'>*</td>
+                    </tr>
+                    <tr>
+                        <td class='one-u key' id='Numpad7'>7</td>
+                        <td class='one-u key' id='Numpad8'>8</td>
+                        <td class='one-u key' id='Numpad9'>9</td>
+                    </tr>
+                    <tr>
+                        <td class='one-u key' id='Numpad4'>4</td>
+                        <td class='one-u key' id='Numpad5'>5</td>
+                        <td class='one-u key' id='Numpad6'>6</td>
+                    </tr>
+                    <tr>
+                        <td class='one-u key' id='Numpad1'>1</td>
+                        <td class='one-u key' id='Numpad2'>2</td>
+                        <td class='one-u key' id='Numpad3'>3</td>
+                    </tr>
+                </table>
+                <table>
+                    <tr>
+                        <td class='num-pad-bot key' id='Numpad0'>0</td>
+                        <td class='one-u key' id='NumpadDecimal'>.</td>
+                    </tr>
+                </table>
+            </td>
+            <td>
+                <table class='last-col'>
+                    <tr><td class='one-u key' id='NumpadSubtract'>-</td></tr>
+                    <tr><td class='owt-u key' id='NumpadAdd'>+</td></tr>
+                    <tr><td class='owt-u key' id='NumpadEnter'>Etr</td></tr>
                 </table>
             </td>
         </tr>
@@ -101,6 +210,6 @@ Note: does not track function or meta keys. (Ctrl, Alt, etc.)' rows='5' cols='10
             </tr>
         </table>
     </div>
-    <script src="javascript/tester.js"></script>
+    <script src='javascript/tester.js'></script>
 </body>
 </html>
