@@ -57,16 +57,23 @@ button {font-size: 1.25vw;}
 .owt-u {width: 30px; height: 73px;}
 .last-col {position: relative; right: 13px;}
 
+@media screen and (max-width: 1400px) {
+    .key {transform: scale(0.8);}
+    .arrow-keys {left: 15%;}
+}
+
 @media screen and (max-width: 1100px) {
     .title {font-size: 6vw;}
     .description {font-size: 2vw;}
     #key-input {font-size: 2vw;}
+    .arrow-keys {left: 7%;}
 }
 
 @media screen and (max-width: 600px) {
     .title {font-size: 8vw;}
     .description {font-size: 3vw;}
     #key-input {font-size: 3vw;}
+    .arrow-keys {left: 2%;}
 }
 
 @keyframes changeColor {
