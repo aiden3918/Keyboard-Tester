@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='UTF-8'>
+    <link rel='stylesheet' type='text/css' href='css\style.css'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+    <meta name='author' content=''>
+    <meta name='description' content=''>
+    <meta name='keywords' content=''>
+    <link rel='icon' type='image/png' href=''>
+    <title></title>
+</head>
+<body id='body'>
+    <noscript>This website requires javascript to run. Please install javascript and try again.</noscript>
+    <h1 class='title'>Keyboard Tester</h1>
+    <div class='input' id='input'>
+        <p id='key-input'>Input log: </p>
+        <button id='reset'>Reset</button><br>
+    </div>
+    <table class='keyboard'>
+        <tr class='topmost-keys'>
+            <!--function keys-->
+            <td class='func-keys'>
+                <div class='func-key key' id='Escape'>Esc</div>
+                <div class='func-key key' id='F1'>F1</div>
+                <div class='func-key key' id='F2'>F2</div>
+                <div class='func-key key' id='F3'>F3</div>
+                <div class='func-key key' id='F4'>F4</div>
+                <div class='func-key key' id='F5'>F5</div>
+                <div class='func-key key' id='F6'>F6</div>
+                <div class='func-key key' id='F7'>F7</div>
+                <div class='func-key key' id='F8'>F8</div>
+                <div class='func-key key' id='F9'>F9</div>
+                <div class='func-key key' id='F10'>F10</div>
+                <div class='func-key key' id='F11'>F11</div>
+                <div class='func-key key' id='F12'>F12</div>
+            </td>
+            <!--top three keys-->
+            <td>
+                <table>
+                    <tr>
+                        <td class='key space1' id='PrintScreen'>Prt<br>Scn</td>
+                        <td class='key space1' id='ScrollLock'>Scr<br>Lck</td>
+                        <td class='key space1' id='Pause'>Pause</td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+        <tr class='main-section'>
+            <td>
+                <table>
+                    <tr class='num-row'>
+                        <td class='one-u key' id='Backquote'>`</td>
+                        <td class='one-u key' id='Digit1'>1</td>
+                        <td class='one-u key' id='Digit2'>2</td>
+                        <td class='one-u key' id='Digit3'>3</td>
+                        <td class='one-u key' id='Digit4'>4</td>
+                        <td class='one-u key' id='Digit5'>5</td>
+                        <td class='one-u key' id='Digit6'>6</td>
+                        <td class='one-u key' id='Digit7'>7</td>
+                        <td class='one-u key' id='Digit8'>8</td>
+                        <td class='one-u key' id='Digit9'>9</td>
+                        <td class='one-u key' id='Digit0'>0</td>
+                        <td class='one-u key' id='Minus'>-</td>
+                        <td class='one-u key' id='Equal'>=</td>
+                        <td class='backspace key' id='Backspace'>Backspace</td>
+                    </tr>
+                </table>
+                <table>
+                    <tr class='top-row'>
+                        <td class='one-half-u key' id='Tab'>Tab</td>
+                        <td class='one-u key' id='KeyQ'>Q</td>
+                        <td class='one-u key' id='KeyW'>W</td>
+                        <td class='one-u key' id='KeyE'>E</td>
+                        <td class='one-u key' id='KeyR'>R</td>
+                        <td class='one-u key' id='KeyT'>T</td>
+                        <td class='one-u key' id='KeyY'>Y</td>
+                        <td class='one-u key' id='KeyU'>U</td>
+                        <td class='one-u key' id='KeyI'>I</td>
+                        <td class='one-u key' id='KeyO'>O</td>
+                        <td class='one-u key' id='KeyP'>P</td>
+                        <td class='one-u key' id='BracketLeft'>[</td>
+                        <td class='one-u key' id='BracketRight'>]</td>
+                        <td class='one-half-u key' id='Backslash'>\</td>
+                        </tr>
+                </table>
+                <table>
+                    <tr class='home-row'>
+                        <td class='one-sf-u key' id='CapsLock'>CpsLck</td>
+                        <td class='one-u key' id='KeyA'>A</td>
+                        <td class='one-u key' id='KeyS'>S</td>
+                        <td class='one-u key' id='KeyD'>D</td>
+                        <td class='one-u key' id='KeyF'>F</td>
+                        <td class='one-u key' id='KeyG'>G</td>
+                        <td class='one-u key' id='KeyH'>H</td>
+                        <td class='one-u key' id='KeyJ'>J</td>
+                        <td class='one-u key' id='KeyK'>K</td>
+                        <td class='one-u key' id='KeyL'>L</td>
+                        <td class='one-u key' id='Semicolon'>;</td>
+                        <td class='one-u key' id='Quote'>'</td>
+                        <td class='two-u key' id='Enter'>Enter</td>
+                        </tr>
+                </table>
+                <table>
+                    <tr class='bottom-row'>
+                        <td class='two-tf-u key' id='ShiftLeft'>Shift</td>
+                        <td class='one-u key' id='KeyZ'>Z</td>
+                        <td class='one-u key' id='KeyX'>X</td>
+                        <td class='one-u key' id='KeyC'>C</td>
+                        <td class='one-u key' id='KeyV'>V</td>
+                        <td class='one-u key' id='KeyB'>B</td>
+                        <td class='one-u key' id='KeyN'>N</td>
+                        <td class='one-u key' id='KeyM'>M</td>
+                        <td class='one-u key' id='Comma'>,</td>
+                        <td class='one-u key' id='Period'>.</td>
+                        <td class='one-u key' id='Slash'>/</td>
+                        <td class='two-half-u key' id='ShiftRight'>Shift</td>
+                    </tr>
+                </table>
+                <table>
+                    <tr class='bottom-section'>
+                        <td class='bot1 key' id='ControlLeft'>Ctrl</td>
+                        <td class='bot1 key' id='MetaLeft'>Meta</td>
+                        <td class='bot1 key' id='AltLeft'>Alt</td>
+                        <td class='spacebar key' id='Space'>Space</td>
+                        <td class='bot1 key' id='AltRight'>Alt</td>
+                        <td class='bot1 key' id='ContextMenu'>Cont</td>
+                        <td class='bot1 key' id='ControlRight'>Ctrl</td>
+                    </tr>
+                </table>
+            </td>
+            <td>
+                <table class='m-keys'>
+                    <tr>
+                        <td class='m-key key' id='Insert'>Ins</td>
+                        <td class='m-key key' id='Home'>Home</td>
+                        <td class='m-key key' id='PageUp'>PgUp</td>
+                    </tr>
+                    <tr class='m-end'>
+                        <td class='m-key key' id='Delete'>Del</td>
+                        <td class='m-key key' id='End'>End</td>
+                        <td class='m-key key' id='PageDown'>PgDn</td>
+                    </tr>
+                </table>
+                <br><br>
+                <table class='arrow-keys'>
+                    <tr>
+                        <td></td>
+                        <td class='one-u key' id='ArrowUp'>&#8593;</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td class='one-u key' id='ArrowLeft'>&#8592;</td>
+                        <td class='one-u key' id='ArrowDown'>&#8595;</td>
+                        <td class='one-u key' id='ArrowRight'>&#8594;</td>
+                    </tr>
+                </table>
+            </td>
+            <td>
+                <table class='90'>
+                    <tr>
+                        <td class='one-u key' id='NumLock'>Num Lck</td>
+                        <td class='one-u key' id='NumpadDivide'>/</td>
+                        <td class='one-u key' id='NumpadMultiply'>*</td>
+                    </tr>
+                    <tr>
+                        <td class='one-u key' id='Numpad7'>7</td>
+                        <td class='one-u key' id='Numpad8'>8</td>
+                        <td class='one-u key' id='Numpad9'>9</td>
+                    </tr>
+                    <tr>
+                        <td class='one-u key' id='Numpad4'>4</td>
+                        <td class='one-u key' id='Numpad5'>5</td>
+                        <td class='one-u key' id='Numpad6'>6</td>
+                    </tr>
+                    <tr>
+                        <td class='one-u key' id='Numpad1'>1</td>
+                        <td class='one-u key' id='Numpad2'>2</td>
+                        <td class='one-u key' id='Numpad3'>3</td>
+                    </tr>
+                </table>
+                <table>
+                    <tr>
+                        <td class='num-pad-bot key' id='Numpad0'>0</td>
+                        <td class='one-u key' id='NumpadDecimal'>.</td>
+                    </tr>
+                </table>
+            </td>
+            <td>
+                <table class='last-col'>
+                    <tr><td class='one-u key' id='NumpadSubtract'>-</td></tr>
+                    <tr><td class='owt-u key' id='NumpadAdd'>+</td></tr>
+                    <tr><td class='owt-u key' id='NumpadEnter'>Etr</td></tr>
+                </table>
+            </td>
+        </tr>
+    </table>
+    <div class='description'>
+        <h3>About</h3>
+        <p>This is a program to see if your keys are working. Simply press your keyboard to see if input registers for that key.</p>
+        <p>If the corresponding key turns green, it works. If it doesn't, that key may not work.</p>
+        <table class='notes'>
+            <tr>
+                <td class='notes-row'>Notes: </td>
+                <td> 1. To test numeric keypad, turn on NumLock.</td>
+            </tr>
+            <tr>
+                <td></td>
+                <td> 2. Some keys, such as PrintScreen, are weird and do not register in the program sometimes, if at all.</td>
+            </tr>
+        </table>
+    </div>
+    <script src='javascript\tester.js'></script>
+</body>
+</html>
